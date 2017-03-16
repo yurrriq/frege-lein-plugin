@@ -22,7 +22,7 @@ Usage - Manual
 
 If you already have a Leiningen project, you can add this plugin as follows:
 
-Add `[lein-fregec "3.24.100a"]` to `:plugins` in your `project.clj`. The version of `lein-fregec` matches the version of the Frege compiler it is compatible with and uses.
+Add `[org.clojars.yurriq/lein-fregec "3.24.100.1"]` to `:plugins` in your `project.clj`. The version of `lein-fregec` matches the version of the Frege compiler it is compatible with and uses.
 
 Usage - Configuration & Execution
 -----

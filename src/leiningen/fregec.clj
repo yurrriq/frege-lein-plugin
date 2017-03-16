@@ -9,7 +9,7 @@
   (:import java.io.File
            (java.nio.file Files Paths)))
 
-(def ^:private fregec-version "3.24.100")
+(def ^:private fregec-version "3.24.100.1")
 
 (defn- stale-frege-sources
   "Returns a lazy seq of file paths: every Frege source file within dirs modified
@@ -34,7 +34,7 @@
 
 (def ^:private subprocess-profile
   {:dependencies [^:displace ['org.clojure/clojure (clojure-version)]
-                  ['org.frege-lang/frege fregec-version]]
+                  ['org.frege-lang/frege fregec-version :classifier "jdk8"]]
    :eval-in :subprocess})
 
 (defn- file-exists
